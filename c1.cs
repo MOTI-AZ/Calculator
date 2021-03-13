@@ -8,6 +8,8 @@ namespace Calculator_
 {
     public static class c1
     {
+        
+        //addition
         public static double add(double a, double b)
         {
             return a + b;
@@ -19,14 +21,17 @@ namespace Calculator_
             int b = Convert.ToInt32(d);
             return a + b;
         }
+        
         public static int add(string[] st)
         {
             int i = 0;
-
             foreach (string a in st)
                 i += Convert.ToInt32(a);
             return i;
         }
+        
+        //subtraction
+        
         public static double sub(double a, double b)
         {
             return a - b;
@@ -44,6 +49,8 @@ namespace Calculator_
             int b = Convert.ToInt32(st[1]);
             return a - b;
         }
+        
+        //multiplication
         public static double mul(double a, double b)
         {
             return a * b;
@@ -58,12 +65,14 @@ namespace Calculator_
         {
             int i = 1;
             foreach(string a in st)
-            
                 i *= Convert.ToInt32(a);
-                return i;
+            
+            return i;
 
 
         }
+        
+        //divition
         public static double div(double a,double b)
         {
             return a / b;
@@ -80,6 +89,8 @@ namespace Calculator_
             int b = Convert.ToInt32(st[1]);
             return a / b;
         }
+        
+        //modulos
         public static double mod(double a,double b)
         {
             return a % b;
@@ -96,6 +107,8 @@ namespace Calculator_
             int b = Convert.ToInt32(st[1]);
             return a%b;
         }
+        
+        //power
         public static double pow(int a,int b)
         {
             double s = 1;
